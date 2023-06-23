@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Wiki Page</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Wiki Page</h1>
+    <form method="POST" action="{{ url_for('wiki_results') }}">
+        <p>
+            URL: <input type="text" name="url" placeholder="Enter a URL"><br>
+            Number of sentences: <input type="number" name="num_sents" placeholder="Number of sentences"><br>
+            <input type="submit" value="Submit">
+        </p>
+    </form>
+</body>
+</html>

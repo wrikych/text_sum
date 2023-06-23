@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Welcome</h1>
+    <ul>
+        <li><a href="{{ url_for('wiki') }}">Click this for wiki link</a></li>
+        <li><a href="{{ url_for('text') }}">Click this for text</a></li>
+    </ul>
+</body>
+</html>

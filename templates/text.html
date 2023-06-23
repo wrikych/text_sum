@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Text Page</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Text Page</h1>
+    <form method="POST" action="{{ url_for('text_results') }}">
+        <p>
+            Text: <textarea name="text" id="text" cols="30" rows="10"></textarea><br>
+            Number of sentences: <input type="number" name="num_sents" placeholder="Number of sentences"><br>
+            <input type="submit" value="Submit">
+        </p>
+    </form>
+</body>
+</html>

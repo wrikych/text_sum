@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <ul class="menu">  
+            {% for sentence in sentences: %}  
+            <li>{{ sentence }}</li>
+            <p>.</p>
+            {% endfor %}  
+        </ul>
+    </div>  
+</body>
+</html>
